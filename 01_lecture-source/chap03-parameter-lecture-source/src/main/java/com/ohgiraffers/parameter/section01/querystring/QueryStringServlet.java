@@ -40,6 +40,6 @@ public class QueryStringServlet extends HttpServlet {
             System.out.println(hobby);
         }
 
-
     }
+
 }
