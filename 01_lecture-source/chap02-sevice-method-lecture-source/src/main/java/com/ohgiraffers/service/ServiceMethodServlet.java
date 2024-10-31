@@ -13,7 +13,11 @@ public class ServiceMethodServlet extends HttpServlet {
 
     @Override
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-        /* comment. get 과 post 둘 다 허용 doget(), dopost() 보다 우선순위가 높다. */
+        /* comment.
+         *   http 메소드는 get, post, head, options, put, delete 등등이 있지만
+         *   가장 많이 사용되는 것은 get 과 post 이다. */
+
+        /* comment. sevice()는 get 과 post 둘 다 허용,doGet(), doPost() 보다 우선순위가 높다. */
         // 자료형이 일치하지 않아 강제형변환
         HttpServletRequest request = (HttpServletRequest)req;
         HttpServletResponse response = (HttpServletResponse)res;
@@ -32,13 +36,14 @@ public class ServiceMethodServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        /* comment. get 만 허용 */
+        /* comment. doGet() 은 get 만 허용 */
         System.out.println("GET 요청을 처리 할 메소드 호출됨...");
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        /* comment. post 만 허용 */
+        /* comment. doPost() 는 post 만 허용 */
         System.out.println("POST 요청을 처리 할 메소드 호출됨...");
     }
+
 }
