@@ -17,5 +17,5 @@ public class FormDataServlet extends HttpServlet {
         String name = req.getParameter("name");
         System.out.println("name = " + name);
     }
-    
+
 }
