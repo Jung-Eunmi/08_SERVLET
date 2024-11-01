@@ -33,7 +33,9 @@ public class ReceiveRequestServlet extends HttpServlet {
         // key, value 형식으로 위임 할 서블릿에게 필요한 값 제공
         req.setAttribute("id", id);
 
-        // 요청을 다시 보낼 수 있게만드는
+        // forward 로 insert 를 하게 만들면 새로고침 시 계속 insert 가 되기때문에 데이터가 너무 많아짐
+        // insert 할 시엔 특히 forward 를 사용하면 안됨
+        // RequestDispatcher : 요청을 다시 보낼 수 있게만듦
         RequestDispatcher rd = req.getRequestDispatcher("response");
         rd.forward(req, resp);
     }
