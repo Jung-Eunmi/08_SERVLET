@@ -47,6 +47,5 @@ public class DeleteSessionServlet extends HttpServlet {
         *   Error 가 뜨는 이유는 이미 위에서 Session 자체를 무효화(만료)
         *   시켰기 때문에 이후에 세션을 참조하려고 하면 에러가 발생한다. */
         String password = (String) session.getAttribute("pwd");
-
     }
 }
