@@ -7,7 +7,6 @@
 <body>
     <h1>Filter</h1>
     <h3>Filter 의 라이프 사이클</h3>
-    <form action="first/filter">Filter 작동 확인</form>
-
+    <a href="first/filter">Filter 작동 확인</a>
 </body>
 </html>
