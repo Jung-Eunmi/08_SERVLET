@@ -1,11 +1,5 @@
 <%@ page import="java.time.LocalDate" errorPage="errorPage.jsp" %>
-<%@ page import="java.time.LocalDateTime" %><%--
-  Created by IntelliJ IDEA.
-  User: Hi
-  Date: 2024-11-04
-  Time: 오후 12:53
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="java.time.LocalDateTime" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
