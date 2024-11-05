@@ -6,11 +6,9 @@
 </head>
 <body>
     <h1>은미's 계산기</h1>
-
     <ul>
-        <li><a href="jsp/request.jsp">계산기</a></li>
+        <li><a href="jsp/calcRequest.jsp">계산기</a></li>
     </ul>
-
-
+    <hr>
 </body>
 </html>

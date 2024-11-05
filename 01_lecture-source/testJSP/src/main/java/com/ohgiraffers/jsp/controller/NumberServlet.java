@@ -11,17 +11,13 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet("/number/input")
-public class numberServlet extends HttpServlet {
+public class NumberServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int firstNum = Integer.parseInt(req.getParameter("firstNum"));
         int secondNum = Integer.parseInt(req.getParameter("secondNum"));
         String operator = req.getParameter("operator");
-
-        System.out.println("firstNum = " + firstNum);
-        System.out.println("secondNum = " + secondNum);
-        System.out.println("operator = " + operator);
 
         int totalNum = new Calculator().calcTotalNum(firstNum, secondNum, operator);
 
@@ -30,7 +26,7 @@ public class numberServlet extends HttpServlet {
         req.setAttribute("operator", operator);
         req.setAttribute("totalNum", totalNum);
 
-        RequestDispatcher rd = req.getRequestDispatcher("/jsp/response.jsp");
+        RequestDispatcher rd = req.getRequestDispatcher("/jsp/calcResponse.jsp");
         rd.forward(req, resp);
     }
 }
