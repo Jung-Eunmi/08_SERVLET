@@ -6,7 +6,11 @@
 </head>
 <body>
     <h1>하이미디어계산기</h1>
-    ul
+
+    <ul>
+        <li><a href="jsp/request.jsp">계산기</a></li>
+    </ul>
+
 
 </body>
 </html>
